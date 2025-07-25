@@ -84,7 +84,7 @@ import { getPaymentStatus } from '@base-org/account';
 export async function checkPayment(txId) {
   const status = await getPaymentStatus({ id: txId });
   if (status.status === 'completed') {
-    // fulfil order
+    // fulfill order
   }
 }
 ```
